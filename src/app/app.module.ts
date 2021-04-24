@@ -4,25 +4,32 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './components/app/app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 import { AboutComponent } from './components/about/about.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ITalentComponent } from './components/i-talent/i-talent.component';
+import { ITalentItemComponent } from './components/i-talent-item/i-talent-item.component';
+import {HttpClientModule} from '@angular/common/http';
+import {HttpClientInMemoryWebApiModule} from 'angular-in-memory-web-api';
+import {InMemoryDataService} from './shared/services/in-memory-data.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    PortfolioComponent,
+    ProjectsComponent,
     AboutComponent,
     HeaderComponent,
     FooterComponent,
-    ITalentComponent
+    ITalentComponent,
+    ITalentItemComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService)
   ],
   providers: [],
   bootstrap: [AppComponent]
