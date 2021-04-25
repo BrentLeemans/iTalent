@@ -57,3 +57,11 @@
     font-size: 1.5em;
   }
 }
+
+
+
+a.bg-secondary:hover, a.bg-secondary:focus,
+button.bg-secondary:hover,
+button.bg-secondary:focus {
+  background-color: #1a252f !important;
+}

@@ -13,6 +13,10 @@ import { ITalentItemComponent } from './components/i-talent-item/i-talent-item.c
 import {HttpClientModule} from '@angular/common/http';
 import {HttpClientInMemoryWebApiModule} from 'angular-in-memory-web-api';
 import {InMemoryDataService} from './shared/services/in-memory-data.service';
+import {MdbCollapseModule} from 'mdb-angular-ui-kit';
+import {MDBBootstrapModule} from 'angular-bootstrap-md';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +33,8 @@ import {InMemoryDataService} from './shared/services/in-memory-data.service';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService)
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService),
+    MdbCollapseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
