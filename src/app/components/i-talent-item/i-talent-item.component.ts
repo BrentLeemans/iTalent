@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Activity} from '../../shared/classes/activity';
 
 @Component({
   selector: 'app-i-talent-item',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./i-talent-item.component.css']
 })
 export class ITalentItemComponent implements OnInit {
+  @Input() activity: Activity;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onClick(): void{
+
+  }
 }

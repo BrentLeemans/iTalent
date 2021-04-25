@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import {InMemoryDbService} from 'angular-in-memory-web-api';
-import {Observable} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -11,47 +10,47 @@ export class InMemoryDataService implements InMemoryDbService{
       {
         id: 1,
         name: 'Videobewerking',
-        img: ''
+        img: '../../../assets/img/projects/cabin.png'
       },
       {
         id: 2,
         name: 'Projectweek',
-        img: ''
+        img: '../../../assets/img/projects/cabin.png'
       },
       {
         id: 3,
         name: 'POP-sessies',
-        img: ''
+        img: '../../../assets/img/projects/cabin.png'
       },
       {
         id: 4,
         name: 'Game development',
-        img: ''
+        img: '../../../assets/img/projects/cabin.png'
       },
       {
         id: 5,
         name: 'Seminaries',
-        img: ''
+        img: '../../../assets/img/projects/cabin.png'
       },
       {
         id: 6,
         name: 'Innovatieroute AI',
-        img: ''
+        img: '../../../assets/img/projects/cabin.png'
       },
       {
         id: 8,
         name: 'Google Hash Code',
-        img: ''
+        img: '../../../assets/img/projects/cabin.png'
       },
       {
         id: 9,
         name: 'Elektronica',
-        img: ''
+        img: '../../../assets/img/projects/cabin.png'
       },
       {
         id: 10,
         name: 'Beleggingscursus',
-        img: ''
+        img: '../../../assets/img/projects/cabin.png'
       }
     ];
 
@@ -59,27 +58,27 @@ export class InMemoryDataService implements InMemoryDbService{
       {
         id: 1,
         name: 'Hybrid Crypto',
-        img: ''
+        img: '../../../assets/img/projects/cabin.png'
       },
       {
         id: 2,
         name: '&Tiro',
-        img: ''
+        img: '../../../assets/img/projects/cabin.png'
       },
       {
         id: 3,
         name: 'SmartHome',
-        img: ''
+        img: '../../../assets/img/projects/cabin.png'
       },
       {
         id: 4,
         name: 'Personal Website',
-        img: ''
+        img: '../../../assets/img/projects/cabin.png'
       },
       {
         id: 5,
         name: 'Action RPG',
-        img: ''
+        img: '../../../assets/img/projects/cabin.png'
       },
     ];
     return {activity, project};
