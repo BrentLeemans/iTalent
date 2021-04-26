@@ -1,21 +1,23 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {InMemoryDbService} from 'angular-in-memory-web-api';
 
 @Injectable({
   providedIn: 'root'
 })
-export class InMemoryDataService implements InMemoryDbService{
+export class InMemoryDataService implements InMemoryDbService {
   createDb(): any {
     const activity = [
       {
         id: 1,
-        name: 'Videobewerking',
-        img: '../../../assets/img/projects/cabin.png'
+        name: 'Video editing',
+        img: '../../../assets/img/projects/cabin.png',
+        description: 'I have been editing videos since childhood. In the past, when I played a lot of games, I often made game montages. In 2019 I switched to Adobe Premiere Pro because it had better integration with the other Adobe products. This editing software is quite expensive, especially for a student, so piratebay helped me "borrow" the software. Then I did some VFX using Adobe Premiere Pro and Adobe After Effects. Unfortunately I don\'t spend a lot of time editing videos anymore, but I occasionally try to make a funny meme.'
       },
       {
         id: 2,
         name: 'Projectweek',
-        img: '../../../assets/img/projects/cabin.png'
+        img: '../../../assets/img/projects/cabin.png',
+        description: ''
       },
       {
         id: 3,

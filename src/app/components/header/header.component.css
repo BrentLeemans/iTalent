@@ -24,8 +24,8 @@
   }
 }
 
-a.bg-primary:hover, a.bg-primary:focus,
-button.bg-primary:hover,
-button.bg-primary:focus {
+a.primary-background:hover, a.primary-background:focus,
+button.primary-background:hover,
+button.primary-background:focus {
   background-color: #148f77 !important;
 }

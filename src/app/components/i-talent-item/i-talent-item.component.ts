@@ -13,8 +13,4 @@ export class ITalentItemComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  onClick(): void{
-
-  }
 }

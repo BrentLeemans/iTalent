@@ -14,9 +14,7 @@ import {HttpClientModule} from '@angular/common/http';
 import {HttpClientInMemoryWebApiModule} from 'angular-in-memory-web-api';
 import {InMemoryDataService} from './shared/services/in-memory-data.service';
 import {MdbCollapseModule} from 'mdb-angular-ui-kit';
-import {MDBBootstrapModule} from 'angular-bootstrap-md';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-
+import {ModalModule} from 'angular-bootstrap-md';
 
 @NgModule({
   declarations: [
@@ -34,7 +32,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     AppRoutingModule,
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService),
-    MdbCollapseModule
+    MdbCollapseModule,
+    ModalModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
