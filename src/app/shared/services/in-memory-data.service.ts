@@ -53,13 +53,13 @@ export class InMemoryDataService implements InMemoryDbService {
         id: 6,
         name: 'Innovation route AI',
         img: 'assets/img/projects/ai.png',
-        description: 'During the innovation route, 3 companies came by to explain more about AI.\n' +
-          '\n' +
-          'Brainjar talked about the domain of deep learning. During the seminar I had the opportunity to train a model myself using tools such as Keras.\n' +
-          '\n' +
-          'Mediaan gave an introduction to computer vision. I also got a hands-on exercise where the goal was to drive a robot vacuum cleaner without bumping into walls.\n' +
-          '\n' +
-          'And lastly, we also had a workshop from Cegeka that focused on Fast AI 2. First there was a short informative introduction and finally an assignment about categorizing images.'
+        description: 'During the innovation route, 3 companies came by to explain more about AI. ' +
+          'Brainjar talked about the domain of deep learning. ' +
+          'During the seminar I had the opportunity to train a model myself using tools such as Keras. ' +
+          'Mediaan gave an introduction to computer vision. ' +
+          'I also got a hands-on exercise where the goal was to drive a robot vacuum cleaner without bumping into walls. ' +
+          'And lastly, we also had a workshop from Cegeka that focused on Fast AI 2. ' +
+          'First there was a short informative introduction and finally an assignment about categorizing images.'
       },
       {
         id: 7,
@@ -91,39 +91,45 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 1,
         name: 'Hybrid Crypto',
-        img: 'assets/img/projects/encryption.png'
+        img: 'assets/img/projects/encryption.png',
+        description: 'During the security advanced course I was instructed to create an application where messages and files can be securely sent to a receiver.' +
+          'I developed this application using ASP.NET and Angular and used Hybrid Encryption. ' +
+          'This means that both the messages and the files were encrypted symmetrically AND asymmetrically. This ensures very secure message sharing.'
       },
       {
         id: 2,
         name: '&Tiro',
-        img: 'assets/img/projects/tiro.png'
+        img: 'assets/img/projects/tiro.png',
+        description: 'I worked on a project called &Tiro in collaboration with Xplore Group. ' +
+          'This was a very large project where I worked on with eight other people. ' +
+          'A new backend technology called Quarkus was used and the frontend was developed in React. ' +
+          'Using the application, accounts could be automatically created for new employees.'
       },
       {
         id: 3,
         name: 'Smarthome',
-        img: 'assets/img/projects/smarthome.png'
+        img: 'assets/img/projects/smarthome.png',
+        description: 'This was one of the first mobile applications I worked on. ' +
+          'I used Xamarin.Forms using the MVVM pattern to build the mobile application and Spring Boot for the underlying back-end. ' +
+          'Smart lights could be turned on and off with this app. ' +
+          'It was also possible to set smart timers and every user input was logged in a local storage.'
       },
       {
         id: 4,
         name: 'Personal Website',
-        img: 'assets/img/projects/website.png'
+        img: 'assets/img/projects/website.png',
+        description: 'I made this personal website using Angular 11. ' +
+          'Because I was on a tight schedule I was able to finish and deploy this website in two days.'
       },
       {
         id: 5,
         name: 'Action RPG',
-        img: 'assets/img/projects/gamedevelopment.png'
+        img: 'assets/img/projects/gamedevelopment.png',
+        description: 'During summer break I made a small game in Godot where it was possible to explore the world and kill enemies.' +
+          ' The enemies used an AI to track the player. ' +
+          'There was a health system for both the player and the enemies and I also created a map editor.'
       },
     ];
     return {activity, project};
   }
-
-  genId(activity: any[]): number {
-    return activity.length > 0 ? activity.length + 1 : 1;
-  }
 }
-
-/*
-GET /api/activity              all activity objects
-POST /api/activity             create activity object (without id)
-DELETE /api/activity/1         delete activity object with id 1
-*/
