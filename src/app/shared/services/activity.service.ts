@@ -8,7 +8,8 @@ import {Activity} from '../classes/activity';
   providedIn: 'root'
 })
 export class ActivityService {
-  activityAPI = environment.IN_MEMORY_API;
+  activityAPI = environment.ACTIVITY_API;
+  projectAPI = environment.PROJECT_API;
 
   constructor(private http: HttpClient) { }
 
@@ -16,12 +17,8 @@ export class ActivityService {
     return this.http.get<Activity[]>(this.activityAPI);
   }
 
-  addActivity(activity: Activity): Observable<any>{
-    return this.http.post(this.activityAPI, activity);
-  }
-
-  deleteActivity(id: number): Observable<any>{
-    return this.http.delete(`${this.activityAPI}/${id}`);
+  getProjects(): Observable<Activity[]>{
+    return this.http.get<Activity[]>(this.projectAPI);
   }
 
 }

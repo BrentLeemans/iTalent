@@ -1,4 +1,5 @@
 export const environment = {
-  IN_MEMORY_API: 'api/activity',
+  ACTIVITY_API: 'api/activity',
+  PROJECT_API: 'api/project',
   production: true
 };

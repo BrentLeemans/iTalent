@@ -8,58 +8,10 @@
       <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
       <div class="divider-custom-line"></div>
     </div>
-    <!-- project Grid Items-->
+
     <div class="row justify-content-center">
-      <!-- project Item 1-->
-      <div class="col-md-6 col-lg-4 mb-5">
-        <div class="project-item mx-auto" data-toggle="modal" data-target="#projectModal1">
-          <div class="project-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-            <div class="project-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-          </div>
-          <img class="img-fluid" src="assets/img/projects/cabin.png" alt="" />
-        </div>
-        <h2 class="text-center">Hybrid Crypto</h2>
-      </div>
-      <!-- project Item 2-->
-      <div class="col-md-6 col-lg-4 mb-5">
-        <div class="project-item mx-auto" data-toggle="modal" data-target="#projectModal2">
-          <div class="project-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-            <div class="project-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-          </div>
-          <img class="img-fluid" src="assets/img/projects/cake.png" alt="" />
-        </div>
-        <h2 class="text-center">&Tiro</h2>
-      </div>
-      <!-- project Item 3-->
-      <div class="col-md-6 col-lg-4 mb-5">
-        <div class="project-item mx-auto" data-toggle="modal" data-target="#projectModal3">
-          <div class="project-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-            <div class="project-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-          </div>
-          <img class="img-fluid" src="assets/img/projects/circus.png" alt="" />
-        </div>
-        <h2 class="text-center">SmartHome</h2>
-      </div>
-      <!-- project Item 4-->
-      <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-        <div class="project-item mx-auto" data-toggle="modal" data-target="#projectModal4">
-          <div class="project-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-            <div class="project-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-          </div>
-          <img class="img-fluid" src="assets/img/projects/game.png" alt="" />
-        </div>
-        <h2 class="text-center">Personal Website</h2>
-      </div>
-      <!-- project Item 5-->
-      <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-        <div class="project-item mx-auto" data-toggle="modal" data-target="#projectModal5">
-          <div class="project-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-            <div class="project-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-          </div>
-          <img class="img-fluid" src="assets/img/projects/safe.png" alt="" />
-        </div>
-        <h2 class="text-center">Action RPG</h2>
-      </div>
+      <app-activity *ngFor="let project of projects" [activity]="project"></app-activity>
     </div>
+
   </div>
 </section>

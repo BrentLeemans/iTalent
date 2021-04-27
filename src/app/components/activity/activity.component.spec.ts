@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ITalentItemComponent } from './i-talent-item.component';
+import { ActivityComponent } from './activity.component';
 
-describe('ITalentItemComponent', () => {
-  let component: ITalentItemComponent;
-  let fixture: ComponentFixture<ITalentItemComponent>;
+describe('ActivityComponent', () => {
+  let component: ActivityComponent;
+  let fixture: ComponentFixture<ActivityComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ITalentItemComponent ]
+      declarations: [ ActivityComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ITalentItemComponent);
+    fixture = TestBed.createComponent(ActivityComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,6 +1,6 @@
 <section class="page-section" id="iTalent">
   <div class="container">
-    <!-- Portfolio Section Heading-->
+    <!-- Section Heading-->
     <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">I-Talent</h2>
     <!-- Icon Divider-->
     <div class="divider-custom">
@@ -8,10 +8,10 @@
       <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
       <div class="divider-custom-line"></div>
     </div>
-    <!-- Portfolio Grid Items-->
 
     <div class="row justify-content-center">
-      <app-i-talent-item *ngFor="let activity of activities" [activity]="activity"></app-i-talent-item>
+      <app-activity *ngFor="let activity of activities" [activity]="activity"></app-activity>
     </div>
+
   </div>
 </section>

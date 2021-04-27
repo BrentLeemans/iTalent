@@ -9,12 +9,12 @@ import { AboutComponent } from './components/about/about.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ITalentComponent } from './components/i-talent/i-talent.component';
-import { ITalentItemComponent } from './components/i-talent-item/i-talent-item.component';
 import {HttpClientModule} from '@angular/common/http';
 import {HttpClientInMemoryWebApiModule} from 'angular-in-memory-web-api';
 import {InMemoryDataService} from './shared/services/in-memory-data.service';
 import {MdbCollapseModule} from 'mdb-angular-ui-kit';
 import {ModalModule} from 'angular-bootstrap-md';
+import { ActivityComponent } from './components/activity/activity.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,7 @@ import {ModalModule} from 'angular-bootstrap-md';
     HeaderComponent,
     FooterComponent,
     ITalentComponent,
-    ITalentItemComponent
+    ActivityComponent
   ],
   imports: [
     BrowserModule,
